@@ -7,7 +7,8 @@ Production-grade Church Management SaaS foundation with a modern Next.js fronten
 - ✅ Frontend scaffolded with Next.js App Router, TypeScript, Tailwind CSS, and ESLint
 - ✅ Phase 1 architecture baseline documented
 - ✅ Phase 2 technical blueprint documented
-- 🚧 Backend scaffold blocked in this environment by Composer GitHub authentication
+- ✅ Phase 3.1 backend foundation artifacts delivered (env contract + tenancy/RBAC/CMS schema + permission seed catalog)
+- 🚧 Laravel runtime scaffold still blocked in this environment by Composer GitHub authentication
 
 ## Documentation
 
@@ -15,6 +16,7 @@ Production-grade Church Management SaaS foundation with a modern Next.js fronten
 - `/docs/phase-2-foundation.md` — approved Phase 2 blueprint (tenancy, RBAC, API, DB impact)
 - `/docs/api-contract-stubs.md` — API request/response contract starters
 - `/docs/tenancy-rbac-integration.md` — tenancy isolation and RBAC enforcement artifacts
+- `/docs/phase-3-1-foundation-implementation.md` — implemented Phase 3.1 backend foundation details
 
 ## Planned Stack
 
