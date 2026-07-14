@@ -5,8 +5,14 @@ Production-grade Church Management SaaS foundation with a modern Next.js fronten
 ## Current Status
 
 - ✅ Frontend scaffolded with Next.js App Router, TypeScript, Tailwind CSS, and ESLint
-- 🚧 Backend scaffold pending in this environment due Composer GitHub authentication limits
-- ✅ Initial architecture and module plan documented
+- ✅ Phase 1 architecture baseline documented
+- ✅ Phase 2 technical blueprint documented
+- 🚧 Backend scaffold blocked in this environment by Composer GitHub authentication
+
+## Documentation
+
+- `/docs/architecture.md` — Phase 1 architecture baseline
+- `/docs/phase-2-foundation.md` — approved Phase 2 blueprint (tenancy, RBAC, API, DB impact)
 
 ## Planned Stack
 
@@ -30,7 +36,7 @@ Production-grade Church Management SaaS foundation with a modern Next.js fronten
 ## Repository Structure
 
 - `/frontend` — Next.js application
-- `/backend` — Laravel API application (to be scaffolded)
+- `/backend` — backend bootstrap status and target location for Laravel API
 - `/docs` — architecture and engineering documentation
 
 ## Local Development
@@ -42,19 +48,18 @@ npm install
 npm run dev
 ```
 
-### Backend (when credentials/network allow scaffolding)
-```bash
-composer create-project laravel/laravel backend
-cd backend
-php artisan serve
-```
-
-## Validation Commands
-
-### Frontend
+### Frontend Validation
 ```bash
 cd frontend
 npm run lint
 npm run build
+```
+
+### Backend (when credentials/network allow scaffolding)
+```bash
+rm -rf backend
+composer create-project laravel/laravel:^12.0 backend --no-interaction
+cd backend
+php artisan serve
 ```
 
