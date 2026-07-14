@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { adminRoutes, publicRoutes } from "@/config/route-manifest";
 
 function RouteCard({
@@ -14,6 +15,12 @@ function RouteCard({
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">{path}</p>
       <h3 className="mt-2 text-lg font-semibold text-slate-900">{title}</h3>
       <p className="mt-2 text-sm text-slate-600">{description}</p>
+      <Link
+        href={path}
+        className="mt-4 inline-flex text-sm font-medium text-slate-900 underline underline-offset-4"
+      >
+        Open route
+      </Link>
     </article>
   );
 }

@@ -13,6 +13,8 @@ Production-grade Church Management SaaS foundation with a modern Next.js fronten
 
 - `/docs/architecture.md` — Phase 1 architecture baseline
 - `/docs/phase-2-foundation.md` — approved Phase 2 blueprint (tenancy, RBAC, API, DB impact)
+- `/docs/api-contract-stubs.md` — API request/response contract starters
+- `/docs/tenancy-rbac-integration.md` — tenancy isolation and RBAC enforcement artifacts
 
 ## Planned Stack
 
@@ -62,4 +64,3 @@ composer create-project laravel/laravel:^12.0 backend --no-interaction
 cd backend
 php artisan serve
 ```
-
